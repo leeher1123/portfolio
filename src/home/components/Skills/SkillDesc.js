@@ -14,11 +14,12 @@ const Container = styled.div`
   h2 {
     color: #fff;
     margin-bottom: 15px;
+    font-size: 16px;
   }
   p {
     white-space: pre-line;
     color: rgba(255, 255, 255, 0.64);
-    line-height: 1.6;
+    line-height: 2.1;
   }
 `;
 

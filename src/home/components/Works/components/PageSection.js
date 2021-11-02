@@ -22,15 +22,19 @@ const Container = styled.div`
   border-top-left-radius: 60px;
   border-bottom-left-radius: 60px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+
   img {
     width: 820px;
     object-fit: cover;
     margin-bottom: 20px;
   }
+
   h2 {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.73);
+    line-height: 2.1;
   }
 `;
 
