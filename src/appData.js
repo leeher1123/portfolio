@@ -46,6 +46,9 @@ export const appData = {
     youtubeDesc: `- Youtube 페이지는 검색어와 관련된 사진을 보여주는 사이트입니다.
                   - React, Redux, Redux-saga, Redux-toolkit
     `,
+    blogDesc: `- Blog 페이지는 블로그를 만드는 것입니다.
+                  - React, Redux, Redux-saga, Redux-toolkit
+    `,
   },
   contact: {
     menu: 'contact',

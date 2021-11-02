@@ -5,6 +5,7 @@ import SectionTitle from '../../../shared/title/SectionTitle';
 import { appData } from '../../../appData';
 import UnsplashSection from './components/UnsplashSection';
 import YoutubeSection from './components/YoutubeSection';
+import BlogSection from './components/BlogSection';
 
 const Works = () => (
   <Container name="works">
@@ -14,6 +15,9 @@ const Works = () => (
     </WorkSection>
     <WorkSection>
       <YoutubeSection />
+    </WorkSection>
+    <WorkSection>
+      <BlogSection />
     </WorkSection>
   </Container>
 );

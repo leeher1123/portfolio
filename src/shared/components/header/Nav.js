@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Link from 'next/link';
 
 import NavItem from './NavItem';
 
@@ -9,16 +10,12 @@ const Nav = () => {
       to: 'profile',
     },
     {
-      name: 'skills',
+      name: 'Skills',
       to: 'skills',
     },
     {
-      name: 'works',
+      name: 'Works',
       to: 'works',
-    },
-    {
-      name: 'contact',
-      to: 'contact',
     },
   ];
   return (
@@ -26,12 +23,27 @@ const Nav = () => {
       {
         menu.map((item) => <NavItem item={item} />)
       }
+      <Link href="https://github.com/leeher1123">
+        <a>Github</a>
+      </Link>
     </Container>
   );
 };
 
 const Container = styled.div`
   display: flex;
+  a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    height: 70px;
+    padding: 0 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    &:hover {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
 `;
 
 export default Nav;
