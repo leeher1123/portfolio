@@ -48,4 +48,9 @@ export const appData = {
   contact: {
     menu: 'contact',
   },
+  links: {
+    unsplashLink: 'https://jiminunsplash.netlify.app/',
+    youtubeLink: 'https://jimintube.netlify.app',
+    blogLink: 'https://jiminblog.netlify.app',
+  },
 };

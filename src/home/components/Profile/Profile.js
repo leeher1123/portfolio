@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 import { ContentContainer } from '../../../shared/components/layout/Layout.Styled';
-import { WaveBackground } from '../../../../styles/svgs';
 import SectionTitle from '../../../shared/title/SectionTitle';
 import { appData } from '../../../appData';
 
@@ -18,34 +17,14 @@ const Profile = () => (
           <p>{appData.profile.description}</p>
         </Desc>
       </Contents>
-      <Background>
-        <WaveBackground />
-      </Background>
     </ContentContainer>
   </Container>
 );
 
 const Container = styled.div`
   background-color: #252525;
-  height: 830px;
+  height: 750px;
   border-top: 1px solid rgba(255, 255, 255, 0.7);
-`;
-
-const Background = styled.div`
-  position: absolute;
-  bottom: -830px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-  svg {
-    position: relative;
-    display: block;
-    width: calc(134% + 1.3px);
-    height: 235px;
-    fill: #4B4B4B;
-  }
 `;
 
 const Contents = styled.div`
