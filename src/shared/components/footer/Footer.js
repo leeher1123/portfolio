@@ -62,7 +62,7 @@ const Icon = styled.div`
   display: flex;
   align-items: center;
   span {
-    margin-left: 5px;
+    margin-left: 15px;
   }
 `;
 

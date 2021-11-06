@@ -1,6 +1,6 @@
 export const appData = {
   visual: {
-    title: `그럼에도, 
+    title: `그럼에도
             끊임없이`,
     description: `어려운 상황이 발생하더라도 포기하지 않고
                   더 나은 사용자 경험을 위해 고민하고 도전하는 개발자가 되는 것이 목표입니다.`,
@@ -38,7 +38,7 @@ export const appData = {
     `,
     youtubeDesc: `- Youtube 페이지는 검색어와 관련된 동영상을 보여주는 사이트입니다.
                   - React, Redux, Redux-saga, Redux-toolkit, Youtube API
-                  - 기능: 반응형, 검색어에 따른 API 통신 구현
+                  - 기능: 반응형, Sidebar, 검색어에 따른 API 통신 구현
     `,
     blogDesc: `   - Blog 페이지는 Firebase 를 이용해 CRUD 를 구현한 사이트입니다.
                   - React, Redux, Redux-saga, Redux-toolkit, Firebase

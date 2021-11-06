@@ -9,9 +9,6 @@ const Profile = () => (
   <Container name="profile">
     <SectionTitle title={appData.profile.menu} />
     <ContentContainer>
-      <Background>
-        <WaveBackground />
-      </Background>
       <Contents>
         <Img>
           <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-87f6a.appspot.com/o/images%2Fprofile_images%2Fprofile.png?alt=media&token=e46f5d28-bdbb-4259-9647-70cad49212ad" alt="내 사진" />
@@ -21,19 +18,22 @@ const Profile = () => (
           <p>{appData.profile.description}</p>
         </Desc>
       </Contents>
+      <Background>
+        <WaveBackground />
+      </Background>
     </ContentContainer>
   </Container>
 );
 
 const Container = styled.div`
   background-color: #252525;
-  height: 700px;
+  height: 830px;
   border-top: 1px solid rgba(255, 255, 255, 0.7);
 `;
 
 const Background = styled.div`
   position: absolute;
-  bottom: -700px;
+  bottom: -830px;
   left: 0;
   width: 100%;
   overflow: hidden;
