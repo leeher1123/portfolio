@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <div>
       <Head>
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         <title>Jimin's portfolio</title>
       </Head>
       <HomeContainer />
