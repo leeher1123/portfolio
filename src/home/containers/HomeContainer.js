@@ -17,7 +17,7 @@ const HomeContainer = () => (
 );
 
 const Container = styled.div`
-  width: 1440px;
+  
 `;
 
 export default HomeContainer;
