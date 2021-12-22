@@ -18,16 +18,15 @@ export const appData = {
     menu: 'skills',
     frontTitle: 'React / HTML / CSS / JS / Redux / Redux-Saga',
     frontDescription: `- React는 프로젝트를 진행하며 주로 사용했으며 상태관리는 Redux 를 사용했습니다.
-                       - function 컴포넌트로 작성하 뷰와 비즈니스 로직을 분리하고 구현하려고 노력합니다. 
+                       - function 컴포넌트로 작성한 뷰와 비즈니스 로직을 분리하고 구현하려고 노력합니다. 
                        - 디렉토리 구조를 고민하며 유지보수가 편리하게 이루어 질 수 있도록 구조를 형성합니다.
                        - HTML 과 CSS 를 통해 클론 코딩 프로젝트를 퍼블리싱 했습니다.
                        - Redux-Saga 를 통해 redux 에서 API 호출과 같은 비동기 작업을 처리할 수 있습니다.`,
     backTitle: 'Youtube API / Firebase ',
     backDescription: `- Youtube API 를 사용하여 데이터를 서버에 요청하고 응답을 받아올 수 있습니다.
                       - Firebase 를 통해 CRUD 를 구현하고 사용자의 사진이나 파일 등을 저장하여 관리합니다.`,
-    communicationTitle: 'Github / Jira / Notion ',
+    communicationTitle: 'Github / Notion ',
     communicationDesc: `- Github 를 통헤 코드 형상 관리와 작업 기록을 관리할 수 있습니다.
-                        - Jira 를 사용하여 프로젝트 일정 및 테스트 관리를 합니다. 
                         - Notion 을 사용하여 각종 문서를 정리 및 작성합니다.`,
   },
   works: {

@@ -14,6 +14,5 @@ export const BackEndImages = [
 
 export const CommunicationImages = [
   <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-87f6a.appspot.com/o/images%2Fskills_images%2Fgithub.png?alt=media&token=b1857d50-6abc-4bfd-b230-cbc78184ca56" alt="깃허브 로고" />,
-  <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-87f6a.appspot.com/o/images%2Fskills_images%2Fjira.png?alt=media&token=f80bea8c-483a-41fe-9d18-d48015332a57" alt="지라 로고" />,
   <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-87f6a.appspot.com/o/images%2Fskills_images%2Fnotion.png?alt=media&token=c08a13dd-d700-4d27-9a57-a9d6e6a5dddc" alt="노션 로고" />,
 ];
