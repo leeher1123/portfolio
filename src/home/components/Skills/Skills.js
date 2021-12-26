@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { BackEndImages, CommunicationImages, FrontEndImages } from './images';
+import { CommunicationImages, FrontEndImages } from './images';
 import SkillDesc from './SkillDesc';
 import { appData } from '../../../appData';
 import SectionTitle from '../../../shared/title/SectionTitle';
@@ -15,13 +15,6 @@ const Skills = () => (
       <SkillDesc
         title={appData.skills.frontTitle}
         description={appData.skills.frontDescription}
-      />
-    </SkillSection>
-    <SkillSection>
-      <SkillList title="Back End" data={BackEndImages} />
-      <SkillDesc
-        title={appData.skills.backTitle}
-        description={appData.skills.backDescription}
       />
     </SkillSection>
     <SkillSection>
