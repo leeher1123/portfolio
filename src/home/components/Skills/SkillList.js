@@ -1,7 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import SkillItem from './SkillItem';
+import { media } from '../../../lib/styled';
 
 const SkillList = ({ title, data }) => (
   <Container>
@@ -23,6 +24,9 @@ const Container = styled.div`
     padding-left: 40px;
     white-space: nowrap;
   }
+  ${media.sm(css`
+    flex-direction: column;
+  `)}
 `;
 
 export default SkillList;

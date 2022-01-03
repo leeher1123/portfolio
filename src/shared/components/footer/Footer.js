@@ -1,5 +1,7 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { HiOutlineMail } from 'react-icons/hi';
+
+import { media } from '../../../lib/styled';
 
 const Footer = () => (
   <Container>
@@ -34,7 +36,6 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px;
   background: #202020;
   border-top: 1px solid rgba(255, 255, 255, 0.27);
   color: rgba(255, 255, 255, 0.62);
@@ -43,6 +44,9 @@ const Container = styled.div`
 
 const List = styled.div`
   display: flex;
+  ${media.sm(css`
+    flex-direction: column;
+  `)}
 `;
 
 const Bar = styled.div`
@@ -57,6 +61,9 @@ const ListItem = styled.div`
   display: flex;
   align-items: center;
   list-style: none;
+  ${media.sm(css`
+    margin-bottom: 20px;
+  `)}
 `;
 
 const Icon = styled.div`
@@ -65,6 +72,9 @@ const Icon = styled.div`
   span {
     margin-left: 15px;
   }
+  ${media.sm(css`
+    margin-bottom: 30px;
+  `)}
 `;
 
 export default Footer;

@@ -1,5 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+import { media } from '../../../lib/styled';
 
 const SkillDesc = ({ title, description }) => (
   <Container>
@@ -11,6 +13,7 @@ const SkillDesc = ({ title, description }) => (
 const Container = styled.div`
   padding: 20px 40px;
   margin-left: 35px;
+  margin-bottom: 20px;
   h2 {
     color: #fff;
     margin-bottom: 15px;
@@ -21,6 +24,10 @@ const Container = styled.div`
     color: rgba(255, 255, 255, 0.64);
     line-height: 2.1;
   }
+  ${media.sm(css`
+    padding: 0 12px;
+    margin: 0;
+  `)}
 `;
 
 export default SkillDesc;

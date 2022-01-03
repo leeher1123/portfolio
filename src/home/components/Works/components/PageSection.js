@@ -1,30 +1,30 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Link from 'next/link';
 import { AiOutlineLink } from 'react-icons/ai';
 
 import ImageList from './ImageList';
+import { media } from '../../../../lib/styled';
 
 const PageSection = ({
   title, to, img, description, list,
-}) => {
-  console.log(to);
-  return (
-    <Container>
-      <Link href={to} passHref>
-        <a>
-          <h2>{title}</h2>
-          <span><AiOutlineLink /></span>
-        </a>
-      </Link>
+}) => (
+  <Container>
+    <Link href={to} passHref>
+      <a>
+        <h2>{title}</h2>
+        <span><AiOutlineLink /></span>
+      </a>
+    </Link>
+    <Screen>
       <img src={img} alt="페이지 전체 이미지" />
-      <Desc>
-        <p>{description}</p>
-      </Desc>
-      <ImageList data={list} />
-    </Container>
-  );
-};
+    </Screen>
+    <Desc>
+      <p>{description}</p>
+    </Desc>
+    <ImageList data={list} />
+  </Container>
+);
 
 const Container = styled.div`
   background: rgba(40, 40, 40, 0.55);
@@ -32,11 +32,6 @@ const Container = styled.div`
   border-top-left-radius: 60px;
   border-bottom-left-radius: 60px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  img {
-    width: 820px;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
   a {
     display: flex;
     align-items: center;
@@ -58,6 +53,27 @@ const Container = styled.div`
     &:hover {
       color: rgba(255, 255, 255, 0.8);
     }
+    ${media.sm(css`
+      justify-content: center;
+    `)}
+  }
+  ${media.sm(css`
+    padding: 0;
+    margin: 0 30px;
+    border-radius: 0;
+  `)}
+`;
+
+const Screen = styled.div`
+  img {
+    width: 100%;
+    height: 100%;
+    max-width: 820px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    ${media.sm(css`
+      justify-content: center;
+  `)}
   }
 `;
 
@@ -68,6 +84,9 @@ const Desc = styled.div`
     white-space: pre-line;
     line-height: 1.8;
   }
+  ${media.sm(css`
+    padding: 0 12px;
+  `)}
 `;
 
 export default PageSection;

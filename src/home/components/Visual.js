@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { appData } from '../../appData';
+import { media } from '../../lib/styled';
 
 const Visual = () => (
   <Container>
@@ -34,6 +35,9 @@ const Content = styled.div`
     font-size: 21px;
     color: rgba(255, 255, 255, 0.8);
   }
+  ${media.sm(css`
+    margin: 0;
+  `)}
 `;
 
 export default Visual;

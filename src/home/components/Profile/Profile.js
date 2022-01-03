@@ -1,8 +1,9 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { ContentContainer } from '../../../shared/components/layout/Layout.Styled';
 import SectionTitle from '../../../shared/title/SectionTitle';
 import { appData } from '../../../appData';
+import { media } from '../../../lib/styled';
 
 const Profile = () => (
   <Container name="profile">
@@ -23,24 +24,25 @@ const Profile = () => (
 
 const Container = styled.div`
   background-color: #252525;
-  height: 750px;
   border-top: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 40px 0;
 `;
 
 const Contents = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  padding: 40px 12px;
   width: 100%;
+  ${media.md(css`
+    flex-direction: column;
+  `)}
 `;
 
 const Img = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 350px;
-  height: 350px;
   background: rgb(209, 156, 162);
   border-radius: 50%;
   margin-right: 80px;
@@ -48,6 +50,9 @@ const Img = styled.div`
     width: 300px;
     height: 300px;
   }
+  ${media.md(css`
+    margin: 0 auto;
+  `)}
 `;
 
 const Desc = styled.div`
@@ -57,12 +62,21 @@ const Desc = styled.div`
   h1 {
     font-size: 56px;
     font-weight: bold;
+    ${media.sm(css`
+      text-align: center;
+  `)}
   }
   p {
     font-size: 16px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.7);
   }
+  ${media.sm(css`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  `)}
 `;
 
 export default Profile;

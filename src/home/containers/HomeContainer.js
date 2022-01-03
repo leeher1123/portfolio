@@ -17,7 +17,7 @@ const HomeContainer = () => (
 );
 
 const Container = styled.div`
-  
+    
 `;
 
 export default HomeContainer;

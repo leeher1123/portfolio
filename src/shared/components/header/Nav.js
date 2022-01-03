@@ -1,7 +1,9 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Link from 'next/link';
+import { AiFillGithub } from 'react-icons/ai';
 
 import NavItem from './NavItem';
+import { media } from '../../../lib/styled';
 
 const Nav = () => {
   const menu = [
@@ -26,6 +28,11 @@ const Nav = () => {
       <Link href="https://github.com/leeher1123">
         <a>Github</a>
       </Link>
+      <GitLogo>
+        <Link href="https://github.com/leeher1123">
+          <a><AiFillGithub /></a>
+        </Link>
+      </GitLogo>
     </Container>
   );
 };
@@ -43,6 +50,23 @@ const Container = styled.div`
     &:hover {
       color: rgba(255, 255, 255, 0.5);
     }
+    ${media.sm(css`
+    display: none;
+  `)}
+  }
+`;
+
+const GitLogo = styled.div`
+  a {
+    font-size: 40px;
+    display: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    ${media.sm(css`
+      display: flex;
+      align-items: center;
+  `)}
   }
 `;
 

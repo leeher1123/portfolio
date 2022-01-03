@@ -1,11 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { CommunicationImages, FrontEndImages } from './images';
 import SkillDesc from './SkillDesc';
 import { appData } from '../../../appData';
 import SectionTitle from '../../../shared/title/SectionTitle';
 import SkillList from './SkillList';
+import { media } from '../../../lib/styled';
 
 const Skills = () => (
   <Container name="skills">
@@ -35,9 +36,12 @@ const Container = styled.div`
 const SkillSection = styled.div`
   max-width: 700px;
   margin: 40px auto;
-  padding-top: 10px;
+  padding: 20px 0;
   background-color: #373737;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  ${media.sm(css`
+    border-radius: 0;
+  `)}
 `;
 export default Skills;

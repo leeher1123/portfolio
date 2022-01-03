@@ -18,7 +18,7 @@ const BlogSection = () => (
 );
 
 const Container = styled.div`
-
+  
 `;
 
 export default BlogSection;

@@ -1,7 +1,9 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import {
   Link,
 } from 'react-scroll';
+
+import { media } from '../../../lib/styled';
 
 const NavItem = ({ item }) => (
   <Container>
@@ -33,6 +35,9 @@ const Container = styled.div`
       color: rgba(255, 255, 255, 0.5);
     }
   }
+  ${media.sm(css`
+    display: none;
+  `)}
 `;
 
 export default NavItem;

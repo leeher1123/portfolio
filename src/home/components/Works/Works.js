@@ -1,11 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import SectionTitle from '../../../shared/title/SectionTitle';
 import { appData } from '../../../appData';
 import UnsplashSection from './components/UnsplashSection';
 import YoutubeSection from './components/YoutubeSection';
 import BlogSection from './components/BlogSection';
+import { media } from '../../../lib/styled';
 
 const Works = () => (
   <Container name="works">
@@ -32,6 +33,9 @@ const WorkSection = styled.div`
   display: flex;
   justify-content: flex-end;
   padding: 40px 0 40px;
+  ${media.sm(css`
+    display: block;
+  `)}
 `;
 
 export default Works;
