@@ -28,6 +28,9 @@ const Nav = () => {
       <Link href="https://github.com/leeher1123">
         <a>Github</a>
       </Link>
+      <Link href="https://www.notion.so/8d7fc554cdf6464ab1e97c77ae6b7ab1">
+        <a>Notion</a>
+      </Link>
       <GitLogo>
         <Link href="https://github.com/leeher1123">
           <a><AiFillGithub /></a>
